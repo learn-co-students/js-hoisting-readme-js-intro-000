@@ -7,26 +7,20 @@ function callMe() {
   return lyric;
 }
 
-callMe()
-
 function crazy() {
-  var thisIsCrazy = function (){
+  var thisIsCrazy = function (){ // defines the function
   // fix the code in here:
     console.log("hey!!!")
   }
+  thisIsCrazy () // calls the function, which gets hoisted upwards
 }
-
-thisIsCrazy ()
-
 
 function sayMyName() {
   // fix the code in here:
   var name = "Cricky";
-
-  sayMy();
-
   function sayMy() {
-    console.log(name);
     var name = "Kristin";
+    console.log(name);
   }
+  sayMy();
 }
