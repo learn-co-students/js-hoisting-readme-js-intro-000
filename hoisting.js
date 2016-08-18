@@ -1,4 +1,4 @@
-// Original call me function.
+// Original callMe function.
 /*function callMe() {
   console.log("I just met you...");
   console.log("and this is crazy..");
@@ -8,7 +8,7 @@
   var lyric = "maybe";
 }*/
 
-//My solution to the problem.
+//My solution to the callMe function.
 function callMe() {
   var lyric = "maybe";
   console.log("I just met you...");
@@ -28,7 +28,7 @@ function callMe() {
   }
 }*/
 
-//My solution to the problem.
+//My solution to the crazy function.
 function crazy() {
   // fix the code in here:
   thisIsCrazy();
@@ -38,7 +38,8 @@ function crazy() {
   }
 }
 
-function sayMyName() {
+// Original sayMyName function.
+/*function sayMyName() {
   // fix the code in here:
   var name = "Cricky";
 
@@ -47,5 +48,18 @@ function sayMyName() {
   function sayMy() {
     console.log(name);
     var name = "Kristin";
+  }
+}*/
+
+//My solution to the sayMyName function.
+function sayMyName() {
+  // fix the code in here:
+  var name = "Cricky";
+
+  sayMy();
+
+  function sayMy() {
+    var name = "Kristin";
+    console.log(name);
   }
 }
