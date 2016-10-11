@@ -8,23 +8,19 @@ function callMe() {
 }
 
 function crazy() {
-  var crazyMessage = "hey!!!"
   // fix the code in here:
-  return function() {
-    console.log(crazyMessage)
-    }
+  var thisIsCrazy = function (){
+    console.log("hey!!!")
+  }
+  thisIsCrazy();
 }
-
-var theCrazy = crazy()();
-theCrazy;
-
 function sayMyName() {
   // fix the code in here:
   var name = "Cricky";
-  return function sayMy() {
+
+  function sayMy() {
     var name = "Kristin";
     console.log(name);
   }
+  sayMy();
 }
-var sayMyNameNow = sayMyName()();
-sayMyNameNow;
