@@ -1,50 +1,31 @@
-/*global afterEach, beforeEach, describe, it */
+function callMe() {
+  console.log("I just met you...");
+  console.log("and this is crazy..");
+  console.log("but here's my number..");
+  console.log("so call me");
+  return lyric;
+  var lyric = "maybe";
+}
 
-'use strict';
 
-const chai = require('chai')
-const fs = require('fs')
-const jsdom = require('mocha-jsdom')
-const path = require('path')
-const spies = require('chai-spies')
+function crazy() {
+  // fix the code in here:
+  thisIsCrazy();
 
-chai.use(spies)
+  var thisIsCrazy = function (){
+    console.log("hey!!!")
+  }
+}
 
-const expect = chai.expect
+function sayMyName() {
+var name = "Kristin";
 
-describe('hoisting', () => {
-  jsdom({
-    src: fs.readFileSync(path.resolve(__dirname, '..', 'hoisting.js'), 'utf-8')
-  })
 
-  describe('callMe', () => {
-    it("returns the string 'maybe'", () => {
-      expect(callMe()).to.equal("maybe");
-    })
-  })
+  sayMy();
 
-  describe('loggers', () => {
-    beforeEach(() => {
-      chai.spy.on(console, 'log')
-    })
+  function sayMy() {
+      var name = "Kristin";
+    console.log(name);
 
-    afterEach(() => {
-      console.log.reset()
-    })
-
-    describe('crazy', () => {
-      it("prints 'hey!!!' to the console from the nested function", () => {
-        crazy()
-
-        expect(console.log).to.have.been.called.with("hey!!!")
-      })
-    })
-
-    describe('sayMyName', () => {
-      it("prints 'Kristin' to the console from the nested function", () => {
-        sayMyName()
-        expect(console.log).to.have.been.called.with("Kristin")
-      })
-    })
-  })
-})
+  }
+}
