@@ -11,21 +11,19 @@ function callMe() {
 
 function crazy() {
   // fix the code in here:
-  return thisIsCrazy();
-
   var thisIsCrazy = function (){
     console.log("hey!!!")
   }
+  return thisIsCrazy();
 }
 
 function sayMyName() {
   // fix the code in here:
-  var name = "Cricky";
-
-  sayMy();
+  name = "Cricky";
 
   function sayMy() {
-    console.log(name);
     var name = "Kristin";
+    console.log(name);    
   }
+  return sayMy();
 }
