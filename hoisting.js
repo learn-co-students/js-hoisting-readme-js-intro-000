@@ -28,4 +28,3 @@ function sayMyName() {
     console.log(name);
   }
 }
-done()
