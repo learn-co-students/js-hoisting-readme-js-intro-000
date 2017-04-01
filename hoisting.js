@@ -3,28 +3,40 @@ function callMe() {
   console.log("and this is crazy..");
   console.log("but here's my number..");
   console.log("so call me");
-  return lyric;
+  //Define the variable before return to avoid hoisting demerits in js
   var lyric = "maybe";
+  return lyric;
+  
+  //  var lyric = "maybe";
+
 }
 
 
 function crazy() {
-  // fix the code in here:
-  thisIsCrazy();
-
+  
   var thisIsCrazy = function (){
     console.log("hey!!!")
   }
+  
+  // fix the code in here:
+  thisIsCrazy();
+//The below function definition must be placed before the function call
+  /*var thisIsCrazy = function (){
+    console.log("hey!!!")
+  }*/
 }
 
 function sayMyName() {
   // fix the code in here:
   var name = "Cricky";
-
-  sayMy();
+  //The function call should be only after it is defined
+//  sayMy();
 
   function sayMy() {
-    console.log(name);
     var name = "Kristin";
+    console.log(name);
+    //name variable must be defined before the console print
+  //  var name = "Kristin";
   }
+   sayMy();
 }
