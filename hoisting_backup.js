@@ -1,5 +1,6 @@
+
 function callMe() {
-  var lyric = "maybe";
+var lyric = "maybe";
   console.log("I just met you...");
   console.log("and this is crazy..");
   console.log("but here's my number..");
@@ -9,15 +10,20 @@ function callMe() {
 }
 
 
+
 function crazy() {
   // fix the code in here:
 
 
-  var thisIsCrazy = function (){
+  {
     console.log("hey!!!")
   }
-  thisIsCrazy();
+  var thisIsCrazy = function (){
+    console.log("stuff")
+  };
+  thisIsCrazy()
 }
+
 
 function sayMyName() {
   // fix the code in here:
