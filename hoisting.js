@@ -23,7 +23,7 @@ function sayMyName() {
 
 
   function sayMy() {
-    let name = "Kristin";
+     var name = "Kristin";
     console.log(name);
   };
   sayMy();
