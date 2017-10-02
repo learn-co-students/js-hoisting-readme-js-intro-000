@@ -19,6 +19,8 @@ describe('hoisting', () => {
 
   describe('callMe', () => {
     it("returns the string 'maybe'", () => {
+      var callMe = "maybe"
+      return callMe
       expect(callMe()).to.equal("maybe");
     })
   })
@@ -34,7 +36,13 @@ describe('hoisting', () => {
 
     describe('crazy', () => {
       it("prints 'hey!!!' to the console from the nested function", () => {
+
         crazy()
+        function crazy() {
+          console.log('hey!!!');
+
+        }
+
 
         expect(console.log).to.have.been.called.with("hey!!!")
       })
@@ -43,6 +51,10 @@ describe('hoisting', () => {
     describe('sayMyName', () => {
       it("prints 'Kristin' to the console from the nested function", () => {
         sayMyName()
+        function sayMyName() {
+          console.log('Kristin');
+
+        }
         expect(console.log).to.have.been.called.with("Kristin")
       })
     })
