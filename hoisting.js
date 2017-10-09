@@ -1,5 +1,5 @@
 function callMe() {
-  var lyric = "maybe";
+  var lyric = "maybe";  // Moved variable assignment to the top of current scope
   console.log("I just met you...");
   console.log("and this is crazy..");
   console.log("but here's my number..");
@@ -7,38 +7,21 @@ function callMe() {
   return lyric;
 }
 
-var thisIsCrazy = crazy()
 
-function crazy() {
-  console.log("hey!!!")
-  return thisIsCrazy
+function crazy(){
+  var thisIsCrazy = function (){  // Moved function declaration to the top of current scope
+    console.log("hey!!!")
+  }
+  thisIsCrazy();
 }
 
-//function crazy() {
+
+function sayMyName(){
   // fix the code in here:
-//  thisIsCrazy();
-
-//  var thisIsCrazy = function (){
-//    console.log("hey!!!")
-//  }
-//}
-
-var name = "Kristin"
-var sayMy = sayMyName()
-
-function sayMyName() {
-  console.log(name)
-
+  var name = "Cricky";  // does not print "Cricky" because it is outside the scope of "sayMy" function
+  var sayMy = function (){  // function is declared
+    var name = "Kristin";  // variable is defined inside scope of "sayMy" function
+    console.log(name);  // print name("Kristin")
+  }
+  sayMy();  // call function
 }
-
-//function sayMyName() {
-  // fix the code in here:
-//  var name = "Cricky";
-
-//  sayMy();
-
-//  function sayMy() {
-//    console.log(name);
-//    var name = "Kristin";
-//  }
-//}
