@@ -4,7 +4,7 @@ function callMe() {
   console.log("but here's my number..");
   console.log("so call me");
   return lyric;
-  var lyric = "maybe";
+  let lyric = "maybe";
 }
 
 
@@ -12,19 +12,19 @@ function crazy() {
   // fix the code in here:
   thisIsCrazy();
 
-  var thisIsCrazy = function (){
+  let thisIsCrazy = function (){
     console.log("hey!!!")
   }
 }
 
 function sayMyName() {
   // fix the code in here:
-  var name = "Cricky";
+  let name = "Cricky";
 
   sayMy();
 
   function sayMy() {
     console.log(name);
-    var name = "Kristin";
+    let name = "Kristin";
   }
 }
