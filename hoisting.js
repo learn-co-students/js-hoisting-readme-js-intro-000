@@ -29,9 +29,3 @@ function sayMyName() {
     console.log(name);
   }
 }
-
-// 2) hoisting loggers crazy prints 'hey!!!' to the console from the nested function:
-//   TypeError: thisIsCrazy is not a function at crazy (about:blank:13:3) at Context.it (test/hoisting-test.js:37:9)
-
-// 3) hoisting loggers sayMyName prints 'Kristin' to the console from the nestedfunction:
-//   AssertionError: expected { Spy, 1 call } to have been called with [ 'Kristin' ] at Context.it (test/hoisting-test.js:46:53)
