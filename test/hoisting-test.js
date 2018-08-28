@@ -1,6 +1,6 @@
 /*global afterEach, beforeEach, describe, it */
 
-'use strict';
+"before all"
 
 const chai = require('chai')
 const fs = require('fs')
