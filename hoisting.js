@@ -16,7 +16,7 @@ function crazy() {
   }
   thisIsCrazy();
 }
-crazy()
+
 
 function sayMyName() {
   // fix the code in here:
@@ -30,4 +30,3 @@ function sayMyName() {
     console.log(name);
   }
 }
-sayMyName()
