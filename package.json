@@ -1,6 +1,6 @@
 {
   "name": "js-hoisting-readme",
-  "version": "0.1.0",
+  "version": "mocha-jsdom" "~1.1.0",
   "description": "JavaScript hoisting code-along for Learn.co",
   "main": "hoisting.js",
   "directories": {
