@@ -5,22 +5,23 @@ function callMe() {
   console.log("so call me");
   return lyric;
   var lyric = "maybe";
+  console.log(lyric)
 }
 
 
 function crazy() {
   // fix the code in here:
-  thisIsCrazy();
+
 
   var thisIsCrazy = function (){
     console.log("hey!!!")
   }
 }
+  thisIsCrazy();
 
 function sayMyName() {
   // fix the code in here:
-  var name = "Cricky";
-
+  var name = "Kristin";
   sayMy();
 
   function sayMy() {
