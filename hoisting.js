@@ -28,3 +28,9 @@ sayMy()
     console.log(name);
   }
 }
+/*
+1) hoisting "before all" hook:
+    Error: Cannot find module 'jsdom/lib/old-api'
+     at require (internal/module.js:11:18)
+     at Context.<anonymous> (node_modules/mocha-jsdom/index.js:53:5
+- Cross referenced with solution and seems fine so submitted anyway.
