@@ -2,11 +2,11 @@
 
 'use strict';
 
-const chai = require('chai')
-const fs = require('fs')
-const jsdom = require('mocha-jsdom')
-const path = require('path')
-const spies = require('chai-spies')
+const chai = require('chai');
+const fs = require('fs');
+const jsdom = require('mocha-jsdom');
+const path = require('path');
+const spies = require('chai-spies');
 
 chai.use(spies)
 
@@ -19,7 +19,7 @@ describe('hoisting', () => {
 
   describe('callMe', () => {
     it("returns the string 'maybe'", () => {
-      expect(callMe()).to.equal("maybe");
+      expect(callMe()).to.equal("maybe")
     })
   })
 
@@ -34,7 +34,7 @@ describe('hoisting', () => {
 
     describe('crazy', () => {
       it("prints 'hey!!!' to the console from the nested function", () => {
-        crazy()
+        crazy();
 
         expect(console.log).to.have.been.called.with("hey!!!")
       })
