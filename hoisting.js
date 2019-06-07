@@ -8,7 +8,7 @@ function callMe() {
 }
 
 function crazy() {}
-
+// fix the code in here:
   var thisIsCrazy = function (){
     console.log("hey!!!")
   }
@@ -17,8 +17,7 @@ function crazy() {}
 
 function sayMyName() {
   // fix the code in here:
-  var name;
-  name = "Cricky";
+  var name = "Cricky";
 
   sayMy();
 
