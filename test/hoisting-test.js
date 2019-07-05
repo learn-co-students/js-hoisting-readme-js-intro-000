@@ -19,7 +19,7 @@ describe('hoisting', () => {
 
   describe('callMe', () => {
     it("returns the string 'maybe'", () => {
-      expect(callMe()).to.equal("maybe");
+      expect(callMe()).to.equal("maybe")
     })
   })
 
