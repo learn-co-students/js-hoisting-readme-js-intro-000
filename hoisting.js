@@ -4,7 +4,7 @@ function callMe()  {
 }
 callMe()
 
-let
+
 function thisIsCrazy() {
   // fix the code in here:
     console.log("hey!!!")
