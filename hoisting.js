@@ -15,6 +15,6 @@ function thisIsCrazy() {
   function sayMyName() {
     // fix the code in here:
     let name = "Cricky";
-    console.log(myName);
+    console.log(name);
   }
   sayMyName();
