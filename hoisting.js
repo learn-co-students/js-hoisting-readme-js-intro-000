@@ -1,4 +1,4 @@
-var lyric = "maybe";
+var lyric = "maybe"
 function callMe() {
   console.log("I just met you...");
   console.log("and this is crazy..");
@@ -9,14 +9,15 @@ function callMe() {
 }
 console.log(lyric);
 
-function crazy() {
-  // fix the code in here:
-  thisIsCrazy();
+  function crazy() {
 
-  var thisIsCrazy = function (){
-    console.log("hey!!!")
+
+    var thisIsCrazy = function (){
+      console.log("hey!!!")
+    }
+  thisIsCrazy();
   }
-}
+
 
 function sayMyName() {
   // fix the code in here:
@@ -25,7 +26,7 @@ function sayMyName() {
   sayMy();
 
   function sayMy() {
-    console.log(name);
     var name = "Kristin";
+    console.log(name);
   }
 }
