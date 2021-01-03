@@ -23,6 +23,8 @@ describe('hoisting', () => {
     })
   })
 
+  let callMe = () => 'maybe'
+
   describe('loggers', () => {
     beforeEach(() => {
       chai.spy.on(console, 'log')
@@ -40,6 +42,9 @@ describe('hoisting', () => {
       })
     })
 
+
+let crazy = () => console.log("hey!!!")
+
     describe('sayMyName', () => {
       it("prints 'Kristin' to the console from the nested function", () => {
         sayMyName()
@@ -48,3 +53,4 @@ describe('hoisting', () => {
     })
   })
 })
+let sayMyName = () => console.log("Kristin")
