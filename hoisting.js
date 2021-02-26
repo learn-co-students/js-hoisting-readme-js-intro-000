@@ -10,9 +10,8 @@ function callMe() {
 function crazy() {
     console.log("hey!!!")
 }
-crazy();
+
 
 function sayMyName() {
     console.log("Kristin");
 }
-sayMy();
