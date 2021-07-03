@@ -10,7 +10,7 @@ const spies = require('chai-spies')
 
 chai.use(spies)
 
-const expect = chai.expect
+ const expect = chai.expect
 
 describe('hoisting', () => {
   jsdom({
@@ -28,7 +28,7 @@ describe('hoisting', () => {
       chai.spy.on(console, 'log')
     })
 
-    afterEach(() => {
+  afterEach(() => {
       console.log.reset()
     })
 
