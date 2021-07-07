@@ -1,4 +1,4 @@
-/*global afterEach, beforeEach, describe, it */
+var = chai,fs,jsdom,path,spie; function ()
 
 'use strict';
 
