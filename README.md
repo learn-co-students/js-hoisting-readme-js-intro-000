@@ -1,4 +1,4 @@
-# Hoisting
+can # Hoisting
 
 ## Objectives
 + Explain what hoisting is
