@@ -2,20 +2,20 @@
 
 'use strict';
 
-const chai = require('chai')
-const fs = require('fs')
-const jsdom = require('mocha-jsdom')
-const path = require('path')
-const spies = require('chai-spies')
+const chai = require('chai');
+const fs = require('fs');
+const jsdom = require('mocha-jsdom');
+const path = require('path');
+const spies = require('chai-spies');
 
-chai.use(spies)
+chai.use(spies);
 
-const expect = chai.expect
+const expect = chai.expect;
 
 describe('hoisting', () => {
   jsdom({
     src: fs.readFileSync(path.resolve(__dirname, '..', 'hoisting.js'), 'utf-8')
-  })
+  });
 
   describe('callMe', () => {
     it("returns the string 'maybe'", () => {
