@@ -3,6 +3,7 @@ function callMe() {
   console.log("and this is crazy..");
   console.log("but here's my number..");
   console.log("so call me");
+  console.log("maybe")
   return lyric;
   var lyric = "maybe";
 }
@@ -10,9 +11,11 @@ function callMe() {
 
 function crazy() {
   // fix the code in here:
+
+  var thisIsCrazy
   thisIsCrazy();
 
-  var thisIsCrazy = function (){
+  thisIsCrazy = function (){
     console.log("hey!!!")
   }
 }
@@ -24,7 +27,9 @@ function sayMyName() {
   sayMy();
 
   function sayMy() {
-    console.log(name);
     var name = "Kristin";
+    name = "Kristin"
+    console.log(name);
+
   }
 }
