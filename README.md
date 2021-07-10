@@ -186,6 +186,12 @@ eat = function(){
 Make sure you run the tests in `test/hoisting-test.js`. You'll be coding your solutions in `hoisting.js`. You'll find a bunch of pre-written broken code. Your job is to fix the code to pass the tests.
 
 + Use your knowledge of variable hoisting to get the function `callMe` to return `"maybe"`.
+function callMe(){
+  var word;
+  word = "maybe";
+  console.log(word);
+
+}
 
 + Use your function hoisting expertise to fix the function `thisIsCrazy` to `console.log` the string `"hey!!!"`.
 
